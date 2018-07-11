@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A11D89A720F64724007F4B1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D89A620F64724007F4B1E /* AppDelegate.swift */; };
-		A11D89A920F64724007F4B1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D89A820F64724007F4B1E /* ViewController.swift */; };
 		A11D89AC20F64724007F4B1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11D89AA20F64724007F4B1E /* Main.storyboard */; };
 		A11D89AE20F64724007F4B1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11D89AD20F64724007F4B1E /* Assets.xcassets */; };
 		A11D89B120F64724007F4B1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11D89AF20F64724007F4B1E /* LaunchScreen.storyboard */; };
 		A11D89BC20F652FB007F4B1E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11D89BB20F652FB007F4B1E /* SWRevealViewController.m */; };
+		A11D89C120F656B3007F4B1E /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D89C020F656B3007F4B1E /* ChatVC.swift */; };
+		A11D89C320F656C3007F4B1E /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D89C220F656C3007F4B1E /* ChannelVC.swift */; };
 		C9002504D6BEAC42009E08D3 /* Pods_Chat_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67C7986EB740C4E37119F65 /* Pods_Chat_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,7 +21,6 @@
 		33C462AE39E60E138D81AC58 /* Pods-Chat App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chat App/Pods-Chat App.release.xcconfig"; sourceTree = "<group>"; };
 		A11D89A320F64724007F4B1E /* Chat App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11D89A620F64724007F4B1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A11D89A820F64724007F4B1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A11D89AB20F64724007F4B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A11D89AD20F64724007F4B1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A11D89B020F64724007F4B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +28,8 @@
 		A11D89B920F652FA007F4B1E /* Chat App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chat App-Bridging-Header.h"; sourceTree = "<group>"; };
 		A11D89BA20F652FB007F4B1E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		A11D89BB20F652FB007F4B1E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		A11D89C020F656B3007F4B1E /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		A11D89C220F656C3007F4B1E /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		A67C7986EB740C4E37119F65 /* Pods_Chat_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B1143E357961E0F3D8B420 /* Pods-Chat App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chat App/Pods-Chat App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,9 +84,11 @@
 		A11D89A520F64724007F4B1E /* Chat App */ = {
 			isa = PBXGroup;
 			children = (
+				A11D89BF20F65690007F4B1E /* Model */,
+				A11D89BE20F6568A007F4B1E /* View */,
+				A11D89BD20F65682007F4B1E /* Controller */,
 				A11D89B820F65244007F4B1E /* Supporting Files */,
 				A11D89A620F64724007F4B1E /* AppDelegate.swift */,
-				A11D89A820F64724007F4B1E /* ViewController.swift */,
 				A11D89AA20F64724007F4B1E /* Main.storyboard */,
 				A11D89AD20F64724007F4B1E /* Assets.xcassets */,
 				A11D89AF20F64724007F4B1E /* LaunchScreen.storyboard */,
@@ -101,6 +105,29 @@
 				A11D89B920F652FA007F4B1E /* Chat App-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A11D89BD20F65682007F4B1E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A11D89C020F656B3007F4B1E /* ChatVC.swift */,
+				A11D89C220F656C3007F4B1E /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A11D89BE20F6568A007F4B1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A11D89BF20F65690007F4B1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,7 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A11D89A920F64724007F4B1E /* ViewController.swift in Sources */,
+				A11D89C320F656C3007F4B1E /* ChannelVC.swift in Sources */,
+				A11D89C120F656B3007F4B1E /* ChatVC.swift in Sources */,
 				A11D89A720F64724007F4B1E /* AppDelegate.swift in Sources */,
 				A11D89BC20F652FB007F4B1E /* SWRevealViewController.m in Sources */,
 			);
