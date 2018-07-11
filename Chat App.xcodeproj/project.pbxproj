@@ -14,6 +14,9 @@
 		A11D89BC20F652FB007F4B1E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11D89BB20F652FB007F4B1E /* SWRevealViewController.m */; };
 		A11D89C120F656B3007F4B1E /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D89C020F656B3007F4B1E /* ChatVC.swift */; };
 		A11D89C320F656C3007F4B1E /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D89C220F656C3007F4B1E /* ChannelVC.swift */; };
+		A11D89C720F65BE3007F4B1E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D89C620F65BE3007F4B1E /* GradientView.swift */; };
+		A11D89CA20F66D21007F4B1E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D89C920F66D21007F4B1E /* Constants.swift */; };
+		A11D89CC20F67938007F4B1E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D89CB20F67938007F4B1E /* LoginVC.swift */; };
 		C9002504D6BEAC42009E08D3 /* Pods_Chat_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67C7986EB740C4E37119F65 /* Pods_Chat_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,9 @@
 		A11D89BB20F652FB007F4B1E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		A11D89C020F656B3007F4B1E /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		A11D89C220F656C3007F4B1E /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		A11D89C620F65BE3007F4B1E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		A11D89C920F66D21007F4B1E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A11D89CB20F67938007F4B1E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A67C7986EB740C4E37119F65 /* Pods_Chat_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B1143E357961E0F3D8B420 /* Pods-Chat App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chat App/Pods-Chat App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +90,7 @@
 		A11D89A520F64724007F4B1E /* Chat App */ = {
 			isa = PBXGroup;
 			children = (
+				A11D89C820F66D04007F4B1E /* Utilities */,
 				A11D89BF20F65690007F4B1E /* Model */,
 				A11D89BE20F6568A007F4B1E /* View */,
 				A11D89BD20F65682007F4B1E /* Controller */,
@@ -112,6 +119,7 @@
 			children = (
 				A11D89C020F656B3007F4B1E /* ChatVC.swift */,
 				A11D89C220F656C3007F4B1E /* ChannelVC.swift */,
+				A11D89CB20F67938007F4B1E /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -119,6 +127,7 @@
 		A11D89BE20F6568A007F4B1E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A11D89C620F65BE3007F4B1E /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +137,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A11D89C820F66D04007F4B1E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A11D89C920F66D21007F4B1E /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,8 +269,11 @@
 			files = (
 				A11D89C320F656C3007F4B1E /* ChannelVC.swift in Sources */,
 				A11D89C120F656B3007F4B1E /* ChatVC.swift in Sources */,
+				A11D89CC20F67938007F4B1E /* LoginVC.swift in Sources */,
+				A11D89C720F65BE3007F4B1E /* GradientView.swift in Sources */,
 				A11D89A720F64724007F4B1E /* AppDelegate.swift in Sources */,
 				A11D89BC20F652FB007F4B1E /* SWRevealViewController.m in Sources */,
+				A11D89CA20F66D21007F4B1E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
