@@ -8,6 +8,18 @@
 
 import Foundation
 
+typealias ComplicationHandler = (_ Success: Bool) -> ()
+
+let BASE_URL = "https://connectchannelchat.herokuapp.com/"
+let URL_REGISTER = "\(BASE_URL)account/register"
+
 let TO_LOGIN =  "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
 let UNWIND = "uniwindToChannel"
+
+
+let TOKEN_KEY = "token"
+let LOGGED_IN_KEY = "loggedIn"
+let USER_EMAIL = "userEmail"
+
+
