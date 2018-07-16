@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="AvenirNext.ttc">
-            <string>AvenirNext-BoldItalic</string>
-        </array>
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue-BoldItalic</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Reveal View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -99,7 +88,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mso-d3-Umi">
-                                <rect key="frame" x="104" y="592.5" width="46" height="33"/>
+                                <rect key="frame" x="104" y="593" width="46" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -223,7 +212,7 @@
                                     <action selector="createAccountBtnPressed:" destination="2Ov-fZ-hCR" eventType="touchUpInside" id="AvG-wa-h2d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDn-7T-atf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDn-7T-atf" customClass="RoundedButton" customModule="Chat_App" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="286" width="250" height="33"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -233,6 +222,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -267,7 +261,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGM-tD-eeI">
-                                <rect key="frame" x="112.5" y="60" width="149.5" height="24"/>
+                                <rect key="frame" x="113" y="60" width="149.5" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -280,8 +274,8 @@
                                     <action selector="closePressed:" destination="ZBF-qj-kYY" eventType="touchUpInside" id="voB-gU-bPS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8X-Pr-BHC">
-                                <rect key="frame" x="62" y="597" width="250" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8X-Pr-BHC" customClass="RoundedButton" customModule="Chat_App" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="RkV-f6-Vh3"/>
@@ -291,9 +285,17 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="ZBF-qj-kYY" eventType="touchUpInside" id="Grs-da-lo7"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="zEv-0N-RuW">
-                                <rect key="frame" x="62" y="124" width="250" height="136"/>
+                                <rect key="frame" x="62.5" y="124" width="250" height="136"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hKT-a0-HkB">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
@@ -346,7 +348,7 @@
                                 </subviews>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="3wK-rO-GbJ">
-                                <rect key="frame" x="137" y="300" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="300" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="gTA-zn-dNz"/>
                                     <constraint firstAttribute="width" constant="100" id="tJf-zR-gs4"/>
@@ -358,10 +360,11 @@
                                 <state key="normal" title="Generate Background Color"/>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="2Ov-fZ-hCR" eventType="touchUpInside" id="5vF-HY-Plk"/>
+                                    <action selector="pickBGColorPressed:" destination="ZBF-qj-kYY" eventType="touchUpInside" id="ne4-dp-Ina"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZ5-1a-9zq">
-                                <rect key="frame" x="137" y="300" width="100" height="133"/>
+                                <rect key="frame" x="137.5" y="300" width="100" height="133"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="133" id="YH9-Xt-6y3"/>
                                 </constraints>
@@ -369,6 +372,7 @@
                                 <state key="normal" title="Choose avatar"/>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="2Ov-fZ-hCR" eventType="touchUpInside" id="XJn-g1-i7U"/>
+                                    <action selector="pickAvatarPressed:" destination="ZBF-qj-kYY" eventType="touchUpInside" id="o0a-Ef-2yA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -393,6 +397,10 @@
                         <viewLayoutGuide key="safeArea" id="tMq-2q-hOx"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="S4X-Te-aZJ" id="oxE-ik-yso"/>
+                        <outlet property="passTxt" destination="Wvq-yi-Xl0" id="Aab-tr-Lh6"/>
+                        <outlet property="userImg" destination="3wK-rO-GbJ" id="TZv-yI-Pg9"/>
+                        <outlet property="userNameTxt" destination="hKT-a0-HkB" id="W3L-tP-nak"/>
                         <segue destination="SyE-9I-0PJ" kind="unwind" identifier="uniwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="XlR-Gw-8wL"/>
                     </connections>
                 </viewController>
@@ -421,7 +429,7 @@
                                         <state key="normal" title="Button" image="smackBurger"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZD-gL-by7">
-                                        <rect key="frame" x="164.5" y="42" width="46.5" height="29"/>
+                                        <rect key="frame" x="164.5" y="41.5" width="46.5" height="29"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="21"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
